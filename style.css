@@ -1,0 +1,145 @@
+body {
+    background-color: #f3f0ff;
+    font-family: serif;
+    text-align: center;
+    padding: 50px;
+}
+
+.card {
+    background-color: white;
+    width: 70%;
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px #00000020;
+}
+
+h1 {
+    color: #6c4ab6;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.message {
+    color: #6c4ab6;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+.footer span {
+    color: #888;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #6c4ab6;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* 1. ربط الخط الجديد وتعديل خلفية الصفحة */
+body {
+    font-family: serif, sans-serif !important;
+    background: linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%);
+    min-height: 100vh;
+    position: relative;
+}
+
+/* 2. تحريك النجوم وتوزيعها */
+.stars-container .star {
+    position: absolute;
+    font-size: 24px;
+    animation: floatAndGlow 3s infinite ease-in-out alternate;
+    user-select: none;
+}
+
+.s1 {
+    top: 10%;
+    left: 15%;
+    animation-delay: 0s;
+}
+
+.s2 {
+    top: 20%;
+    right: 12%;
+    animation-delay: 0.7s;
+}
+
+.s3 {
+    bottom: 15%;
+    left: 10%;
+    animation-delay: 1.2s;
+}
+
+.s4 {
+    bottom: 25%;
+    right: 18%;
+    animation-delay: 1.8s;
+}
+
+.s5 {
+    top: 50%;
+    left: 5%;
+    animation-delay: 2.3s;
+}
+
+/* أنيميشن التوهج والحركة للنجوم */
+@keyframes floatAndGlow {
+    0% {
+        transform: translateY(0) scale(0.8);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translateY(-15px) scale(1.2);
+        opacity: 1;
+        filter: drop-shadow(0 0 8px #ffd700);
+    }
+}
+
+/* 3. إضافة تأثير الحركة للكارت عند الوقوف عليه */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(108, 74, 182, 0.3);
+}
+
+/* 4. إبراز صندوق الرسالة الخاصة */
+.message {
+    background-color: #f0ebf8;
+    padding: 15px;
+    border-radius: 12px;
+    border-right: 4px solid #6c4ab6;
+    margin: 20px 0;
+}
