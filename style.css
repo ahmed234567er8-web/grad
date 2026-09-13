@@ -144,39 +144,25 @@ body {
     margin: 20px 0;
 }
 
-/* تجاوب التصميم مع الشاشات الصغيرة والموبايل */
+
+
 @media (max-width: 600px) {
-    body {
-        padding: 15px;
-        /* تقليل الفراغ الخارجي */
-    }
-
     .card {
-        width: 95%;
-        /* الكارت ياخد معظم عرض شاشة الموبايل */
-        padding: 20px 15px;
-        /* تقليل الهوامش الداخلية */
+        width: 90% !important;
+        max-width: none !important;
+        padding: 20px 10px !important;
     }
-
     h1 {
-        font-size: 28px;
-        /* تصغير عنوان "مبروك التخرج" */
+        font-size: 24px !important;
     }
-
     h2 {
-        font-size: 20px;
-        /* تصغير اسم الأخت */
+        font-size: 18px !important;
     }
-
     p {
-        font-size: 15px;
-        /* تصغير حجم الكلام */
-        line-height: 1.6;
+        font-size: 14px !important;
     }
-
     .card img {
-        width: 130px;
-        /* تصغير حجم الصورة لتناسب الموبايل */
-        height: 130px;
+        width: 120px !important;
+        height: 120px !important;
     }
 }
